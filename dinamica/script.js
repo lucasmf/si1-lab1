@@ -1,17 +1,23 @@
 $(document).ready(function(){
   $("#cadastrar").click(function(){
     var text = $("#disciplina").val();
-    $("#aprender").append("<li>"+text+"<button id=\"aprenda\">Aprender</button</li>");
+    $("#aprender").append("<li class=\"list-group-item\">"
+      +text
+      +"<button id =\"addBtn\" type=\"button\" class=\"btn btn-default btn-lg\"><span class=\"glyphicon glyphicon-ok\"></span></button>"
+      +"<button id =\"removeBtn\" type=\"button\" class=\"btn btn-default btn-lg\"><span class=\"glyphicon glyphicon-remove\"></span></button>");
   });
-  $("#aprender").on("click", "#aprenda", function() {
+  $("#aprender").on("click", "#addBtn", function() {
     var parent = $(this).parent();
     var text = parent.text();
     parent.remove();
-    $("#aprendidos").append("<li>"+text+"<button id=\"remove\">Remover</button</li>");
+    $("#aprendidos").append("<li class=\"list-group-item\">"
+      +text
+      +"<button id =\"removeBtn\" type=\"button\" class=\"btn btn-default btn-lg\"><span class=\"glyphicon glyphicon-remove\"></span></button>");
   });
-  $("#aprendidos").on("click", "#remove", function() {
+  $("#aprender").on("click", "#removeBtn", function() {
     $(this).parent().remove();
   });
-
-
+  $("#aprendidos").on("click", "#removeBtn", function() {
+    $(this).parent().remove();
+  });
 });
