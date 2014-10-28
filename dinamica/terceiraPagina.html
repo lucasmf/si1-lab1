@@ -14,28 +14,34 @@
     </style>
 </head>
 <body>
-    
-    <h1>Obrigado!</h1>
-                
+    <h1>Obrigado!</h1>          
     <div class="alert alert-success">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <p><b>Parabéns!</b> Sua matrícula foi realizada com sucesso.</p>
+        <p><b>Parabéns!</b> Sua matrícula foi realizada com sucesso. Agora é hora de cadastrar os assuntos aprendidos e o que ainda iremos aprender.</p>
     </div>
-    Disciplina: <input id="disciplina" type="text" name="nome" value="Seu Nome">
+    Assunto: <input id="disciplina" type="text" name="nome" placeholder="Seu Nome">
     <button id="cadastrar" class="btn btn-default">Cadastrar!</button>
     <br><br>
-
     <div class="row">
         <div class="col-md-6">
-            <ul class="list-group" id="aprender">
-            </ul>
+			<div class="panel panel-warning">
+				<div class="panel-heading">Assuntos a aprender</div>
+				<div class="panel-body">
+					<ul class="list-group" id="aprender">
+					</ul>
+				</div>
+			</div>
         </div>
         <div class="col-md-6">
-            <ul  class="list-group" id="aprendidos">
-            </ul> 
+			<div class="panel panel-success">
+				<div class="panel-heading">Assuntos aprendidos</div>
+				<div class="panel-body">
+					<ul  class="list-group" id="aprendidos">
+					</ul> 
+				</div>
+			</div>
         </div>
     </div>   
-
     <div class="progress">
              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
               <span class="sr-only">100% Complete</span>
