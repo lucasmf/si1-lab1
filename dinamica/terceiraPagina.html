@@ -18,22 +18,27 @@
 		.panel-transparent {
 			background: none;
 		}
-		.list-group-item {
-			backgournd: none;
+		#assunto {
+			text-align: center
 		}
-		.list-group-item {
-			backgournd: none;
-		}
+		
     </style>
 </head>
 <body>
-    <h1>Obrigado!</h1>          
+    <div class="row">
+			<div class="page-header" style="text-align: center">
+				<h1>Obrigado!</h1>
+			</div>
+		</div>        
     <div class="alert alert-success">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <p><b>Parabéns!</b> Sua matrícula foi realizada com sucesso. Agora é hora de cadastrar os assuntos aprendidos e o que ainda iremos aprender.</p>
     </div>
-    Assunto: <input id="disciplina" type="text" name="nome" placeholder="Assunto">
-    <button id="cadastrar" class="btn btn-default">Cadastrar!</button>
+    <div id="assunto">
+		Assunto: <input id="disciplina" type="text" name="nome" placeholder="Assunto">
+		<button id="cadastrar" class="btn btn-default">Cadastrar!</button>
+    </div>
+    
     <br><br><br><br>
     <div class="row">
         <div class="col-md-6">
