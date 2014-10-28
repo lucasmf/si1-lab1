@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Obrigado</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <style>
         p {
             font-family: cursive;
@@ -14,6 +15,15 @@
         body {
 			background-color: #E0E0E0
 		}
+		.panel-transparent {
+			background: none;
+		}
+		.list-group-item {
+			backgournd: none;
+		}
+		.list-group-item {
+			backgournd: none;
+		}
     </style>
 </head>
 <body>
@@ -22,12 +32,12 @@
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <p><b>Parabéns!</b> Sua matrícula foi realizada com sucesso. Agora é hora de cadastrar os assuntos aprendidos e o que ainda iremos aprender.</p>
     </div>
-    Assunto: <input id="disciplina" type="text" name="nome" placeholder="Seu Nome">
+    Assunto: <input id="disciplina" type="text" name="nome" placeholder="Assunto">
     <button id="cadastrar" class="btn btn-default">Cadastrar!</button>
-    <br><br>
+    <br><br><br><br>
     <div class="row">
         <div class="col-md-6">
-			<div class="panel panel-warning">
+			<div class="panel panel-warning panel-transparent">
 				<div class="panel-heading">Assuntos a aprender</div>
 				<div class="panel-body">
 					<ul class="list-group" id="aprender">
@@ -36,7 +46,7 @@
 			</div>
         </div>
         <div class="col-md-6">
-			<div class="panel panel-success">
+			<div class="panel panel-success panel-transparent">
 				<div class="panel-heading">Assuntos aprendidos</div>
 				<div class="panel-body">
 					<ul  class="list-group" id="aprendidos">
